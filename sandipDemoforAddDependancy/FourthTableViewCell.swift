@@ -10,6 +10,16 @@ import UIKit
 
 class FourthTableViewCell: UITableViewCell {
 
+    
+    
+    @IBOutlet weak var txtcellName: UILabel!
+    
+    @IBOutlet weak var txtcellDOB: UILabel!
+    
+    @IBOutlet weak var txtcellAge: UILabel!
+    
+    @IBOutlet weak var txtcellRelationship: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -10,15 +10,45 @@ import UIKit
 
 class ThirdTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
+    var btnDeletm: ((_ aCell: ThirdTableViewCell) -> Void)? = nil
+    
+   
+    
+    @IBOutlet weak var topupsuminsured: UILabel!
+    
+    @IBOutlet weak var premium: UILabel!
+    
+    @IBOutlet weak var btnDeletem: UIButton!
+
+    
+    override func awakeFromNib()
+    {
         super.awakeFromNib()
-        // Initialization code
+        
+        btnDeletem.layer.cornerRadius=3;
+        
+        btnDeletem.clipsToBounds = true;
+        
+        btnDeletem.layer.borderWidth=0.5;
+
+        
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool)
+    {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        
+    
+    }
+    
+    @IBAction func btnDeletePressedm(_ sender: Any) {
+        
+        if((self.btnDeletm) != nil)
+        {
+            self.btnDeletm!(self)
+        }
+        
     }
 
 }

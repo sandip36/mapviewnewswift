@@ -10,8 +10,22 @@ import UIKit
 
 class FourthParentTableViewCell: UITableViewCell {
 
+    
+    
+    @IBOutlet weak var lblPrmium: UILabel!
+    @IBOutlet weak var txtcellName: UILabel!
+    
+    @IBOutlet weak var txtcellDOB: UILabel!
+    
+    @IBOutlet weak var txtcellAge: UILabel!
+    
+    @IBOutlet weak var txtcellRelationship: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+               
+
         // Initialization code
     }
 
